@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827"><title>Telegram ID Finder</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top"><div class="brand"><span class="brandmark">✦</span><span>Trace<span class="accent">ID</span></span></div><span class="tag">TELEGRAM LOOKUP</span></header>
+<main>
+<section class="intro"><div class="eyebrow">PUBLIC TELEGRAM ENTITY LOOKUP</div><h1>Find a Telegram<br><span class="accent">numeric ID.</span></h1><p>Look up an accessible public Telegram chat, channel or group by its username. Results depend on Telegram Bot API access.</p></section>
+<section class="panel">
+<label for="username">TELEGRAM USERNAME OR PUBLIC LINK</label>
+<div class="searchrow"><span class="at">@</span><input id="username" autocomplete="off" spellcheck="false" placeholder="channelname or t.me/channelname"><button id="lookup">Lookup <span>→</span></button></div>
+<div class="hint">Example: <code>@telegram</code> or <code>https://t.me/telegram</code></div>
+<div id="status" class="status" role="status" aria-live="polite"></div>
+<div id="result" class="result" hidden></div>
+</section>
+<section class="notice"><div class="noticeicon">ⓘ</div><div><b>Important limitation</b><p>This tool uses Telegram's Bot API <code>getChat</code>. It can resolve chats the configured bot is allowed to access, such as public channels or groups where it is a member. It cannot discover arbitrary private users or reveal hidden phone numbers.</p></div></section>
+<footer>TRACEID <span>·</span> Use only for lawful, authorized enquiries.</footer>
+</main><script src="/app.js"></script></body></html>
